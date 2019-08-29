@@ -1,0 +1,16 @@
+p {
+    color: grey;
+}
+
+h2 {
+    color: red;
+}
+
+.delete-icon{
+    font-size: 70%;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}

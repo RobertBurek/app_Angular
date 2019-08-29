@@ -1,0 +1,19 @@
+<h2>
+ {{titleTodo}}
+</h2>
+
+<label>
+  Nowy kurs: <input type="text" [(ngModel)]="newTodoCourse" (keyup.enter)="addTodoCourse()" (click)="onClickMe()"/>
+</label>
+<button type="submint" (click)='addTodoCourse()'>Dodaj kurs</button>
+<ul>
+  <li *ngFor="let Course of todoCourses; let ind=index;">
+    <input type="checkbox" [(ngModel)]="Course.complete"/>
+    <span [ngClass]="{'checked':Course.complete}">{{Course.title}}</span>
+    <span class="delete-icon" (click)='deleteCourse(ind)'> [usuń]</span>
+  </li>
+</ul>
+<hr>
+<p>
+  {{cos}}
+</p>
